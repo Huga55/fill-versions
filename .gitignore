@@ -1,0 +1,60 @@
+# Node modules
+/node_modules/
+
+# Electron build artifacts
+/.vscode/
+/dist/
+/build/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+
+# IDE files
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Optional npm cache directory
+.npm/
+
+# Electron package directories
+*.asar
+*.exe
+*.dmg
+
+# Temporary files
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# Test coverage
+/coverage/
+
+# Optional: ignore build files if using CI/CD tools
+/.build/
+/dist/
+/out/
+
+# Ignore generated files for cross-platform builds
+*.dmg
+*.app
+*.deb
+*.rpm
+*.tar.gz
+
+# Ignore JetBrains IDE files
+.idea/
+
+# Ignore Windows installer files
+*.msi
+*.exe

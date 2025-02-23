@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "rootDir": "src",
+    "target": "ESNext",
+    "module": "CommonJS",
+    "outDir": "dist",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "Node"
+  },
+  "include": ["src", "src/**/*.ts", "public/render.js"],
+  "exclude": ["node_modules"]
+}

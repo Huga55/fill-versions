@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Electron App</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="title">Генератор конфига</h2>
+      <textarea
+        id="userConfig"
+        class="textarea"
+        placeholder="Введите ваш конфиг"
+      ></textarea>
+      <textarea
+        id="submodulesList"
+        class="textarea"
+        placeholder="Введите модули и версии"
+      ></textarea>
+      <button id="generate" class="btn">Сгенерировать</button>
+    </div>
+
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span id="modal-close" class="modal-close">&times;</span>
+        <textarea
+          id="output"
+          class="textarea textarea_modal"
+          placeholder="Результат"
+        ></textarea>
+        <button id="copy" class="btn">Скопировать конфиг</button>
+      </div>
+    </div>
+
+    <div id="toast" class="toast">Скопировано успешно</div>
+
+    <script src="./render.js"></script>
+  </body>
+</html>
