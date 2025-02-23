@@ -6,10 +6,11 @@
   "scripts": {
     "test": "jest",
     "clean": "rm -rf dist",
-    "build": "npm run clean && tsc",
-    "start": "cross-env NODE_ENV=development && npm run build && electron .",
-    "build:win": "cross-env NODE_ENV=production && npm run build && electron-builder --win",
-    "build:linux": "cross-env NODE_ENV=production && npm run build && electron-builder --linux",
+    "check": "npm run clean && tsc",
+    "start": "cross-env NODE_ENV=development && npm run check && electron .",
+    "build:prepare": "cross-env NODE_ENV=production && npm run check",
+    "build:win": "npm run build:prepare && electron-builder --win",
+    "build:linux": "build:prepare && electron-builder --linux",
     "dist": "npm run build && electron-builder",
     "postbuild": "mkdir dist\\core\\public && copy public dist\\core\\public"
   },
